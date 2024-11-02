@@ -1,0 +1,18 @@
+def fibonacciGen(x):
+    
+    if x <= 1:
+      return x
+    
+    else :
+         return (fibonacciGen(x-1) + fibonacciGen(x-2))
+
+num = int(input("Enter a number > zero :"))
+
+if num <=0:
+     print("Enter a valid valid number")
+else :
+     print("Seiries ",end="")
+     for i in range(num):
+         
+         print(fibonacciGen(i), end="")
+            
